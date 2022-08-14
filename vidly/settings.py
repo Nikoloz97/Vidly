@@ -34,9 +34,15 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    # sessions = temporarily stores data on user
     'django.contrib.sessions',
+    # messages = create message for user (e.g. "successfully created movie!")
     'django.contrib.messages',
+    # staticfiles = manages CSS, HTML, images, etc.
     'django.contrib.staticfiles',
+    # Register movies app with Django
+    # MoviesConfig = 1st class under apps.py in Movies directory
+    'movies.apps.MoviesConfig'
 ]
 
 MIDDLEWARE = [
