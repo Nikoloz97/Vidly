@@ -21,5 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # any path that starts with movies/ = handed off to URL config in app "movies"
-    path('movies/', include('movies.url'))
+    path('movies/', include('movies.urls'))
 ]
